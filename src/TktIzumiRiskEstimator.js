@@ -6,7 +6,6 @@ export default class TktIzumiRiskEstimator  extends React.Component {
     super();
   }
   render(){
-    alert(this.props.bldg);
     if(this.props.disp == true &&　this.props.bldg == "bld-2"){
       return( 
         <div>

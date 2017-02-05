@@ -6,17 +6,22 @@ import Loading from "react-loading-animation";
 import TktWarning from "./TktWarning"
 import TktIzumiRiskEstimator from "./TktIzumiRiskEstimator";
 import TktSuggestionSelector from "./TktSuggestionSelector";
+import Footer from "./Footer";
 export default class TktResult extends React.Component {
   constructor() {
     super();
     this.state= {
       criticalYear:"default",
     }
+    this.handleSelect = this.handleSelect.bind(this)
+  }
+  handleSelect(){
+
   }
   render(){
     if(this.props.disp==true)
     return(
-    <div className="col-xs-12">
+    <div className="col-xs-12" >
        <TktGraph bldg = {this.props.bldg} disp={this.props.disp}/>
        <br/>
        <TktWarning bldg={this.props.bldg} />
@@ -25,7 +30,8 @@ export default class TktResult extends React.Component {
        <TktNeutralGraph bldg = {this.props.bldg} disp={this.props.disp}/>
        <hr/>
        <TktIzumiRiskEstimator bldg={this.props.bldg} disp={this.props.disp}/>
-       <TktSuggestionSelector disp={this.props.disp}/>
+       <TktSuggestionSelector disp={this.props.disp} handleSelect={this.handleSelect} />
+       <Footer />
     </div> 
     );
   else if(this.props.loading == true){ return(

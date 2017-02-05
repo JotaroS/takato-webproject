@@ -26,7 +26,7 @@ export default class Layout extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.handleLoading = this.handleLoading.bind(this);
-  }
+     }
   changeTitle(title) {
     this.setState({title});
   }
@@ -73,7 +73,7 @@ export default class Layout extends React.Component {
         <Bldg bldg={this.state.building}/>
         <CalcButton disp={this.state.isBldSelected} handleClick={this.handleClick}/>
         <TktResult disp={this.state.isResultDisplay} loading={this.state.isLoadingDisplay} bldg={this.state.building}/>
-        <Footer disp={this.state.isResultDisplay}/>
+        
       </div>
     );
   }

@@ -8,6 +8,7 @@ export default class TktResult extends React.Component {
     }
   }
   render(){
+
     if(this.props.bldg=="bld-1"){return(
 	   <div className="alert alert-warning" role="alert">
 	      <center><h5 className="warning" style={{color:"white"}}>現状手法のままでは<strong>あと11年</strong>で修繕積立金が不足します</h5></center>

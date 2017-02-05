@@ -5,10 +5,13 @@ export default class TktSuggestion  extends React.Component {
   constructor() {
     super();
     this.state= {
+      isClicked:false,
     }
+    this.handleClicked=this.handleClicked.bind(this);
   }
+  handleClicked(){
 
-
+  }
   render(){
     if(this.props.disp == true && this.props.suggestion=='genjyo'){
         return( 
