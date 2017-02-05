@@ -26,7 +26,7 @@ export default class TktResult extends React.Component {
   render(){
     if(this.props.disp==true)
     return(
-    <div className="col-xs-12" >
+    <div className="col-md-12" >
        <TktGraph bldg = {this.props.bldg} disp={this.props.disp}/>
        <br/>
        <TktWarning bldg={this.props.bldg} />
@@ -42,7 +42,7 @@ export default class TktResult extends React.Component {
       <hr/>
        <TktSuggestionSelector disp={this.props.disp} handleSelect={this.handleSelect} />
        <hr/>
-       <div className="col-xs-12" style={{height:"20px"}} />
+       <div className="col-md-12" style={{height:"20px"}} />
        <Footer disp={this.state.isFooterDisplay}/>
     </div> 
     );

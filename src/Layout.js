@@ -59,7 +59,7 @@ export default class Layout extends React.Component {
   }
   render() {
     return (
-      <div className = "col-md-12">
+      <div>
         <div className="form-group">
           <label >物件の諸元:</label>
           <select className="form-control" value={this.state.building}  onChange={this.handleChange}>
