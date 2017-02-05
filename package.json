@@ -8,7 +8,8 @@
     "production": "webpack -p",
     "develop": "webpack -d",
     "watch": "webpack --watch",
-    "server": "webpack-dev-server"
+    "server": "webpack-dev-server",
+    "start":"node src/app.js"
   },
   "keywords": [
     "takato"
