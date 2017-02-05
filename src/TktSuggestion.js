@@ -16,6 +16,8 @@ export default class TktSuggestion  extends React.Component {
     if(this.props.disp == true && this.props.suggestion=='genjyo'){
         return( 
         <div>
+
+        <hr/>
           <div className = "card">
             <div className="col-xs-6">
               <h5>現状手法に対する工法の提案</h5>
@@ -44,6 +46,7 @@ export default class TktSuggestion  extends React.Component {
     if(this.props.disp == true && this.props.suggestion=='suggested'){
         return( 
           <div>
+          <hr/>
           <div className = "card">
             <div className="col-xs-6">
               <h5>提案手法に対する工法の提案</h5>

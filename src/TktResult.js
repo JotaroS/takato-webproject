@@ -3,9 +3,11 @@ import ReactDom from 'react-dom';
 import TktGraph from './TktGraph';
 import TktNeutralGraph from './TktNeutralGraph';
 import Loading from "react-loading-animation";
-import TktWarning from "./TktWarning"
+import TktWarning from "./TktWarning";
+import TktRepairPlan from "./TktRepairPlan";
 import TktIzumiRiskEstimator from "./TktIzumiRiskEstimator";
 import TktSuggestionSelector from "./TktSuggestionSelector";
+import TktBldgManagerPlan from "./TktBldgManagerPlan";
 import Footer from "./Footer";
 export default class TktResult extends React.Component {
   constructor() {
@@ -33,9 +35,14 @@ export default class TktResult extends React.Component {
        <TktNeutralGraph bldg = {this.props.bldg} disp={this.props.disp}/>
        <hr/>
        <TktIzumiRiskEstimator bldg={this.props.bldg} disp={this.props.disp}/>
+      <hr/>
+       <TktRepairPlan disp={this.props.disp} bldg={this.props.bldg} />
+      <hr/>
+        <TktBldgManagerPlan disp={this.props.disp} bldg={this.props.bldg} />
+      <hr/>
        <TktSuggestionSelector disp={this.props.disp} handleSelect={this.handleSelect} />
-       <div className="col-xs-12" style={{height:"50px"}} />
-
+       <hr/>
+       <div className="col-xs-12" style={{height:"20px"}} />
        <Footer disp={this.state.isFooterDisplay}/>
     </div> 
     );

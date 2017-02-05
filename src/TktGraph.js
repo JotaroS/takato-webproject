@@ -13,9 +13,9 @@ export default class TktGraph extends React.Component {
 
   changeData(){
     var tktData;
-    if(this.props.bldg=='bld-1')tktData = require('dsv!../data/KAWASAKI/genjyo_list_K.csv');
-    if(this.props.bldg=='bld-2')tktData = require('dsv!../data/AMA/genjyo_list_A.csv');
-    if(this.props.bldg=='bld-3')tktData = require('dsv!../data/Hokkaido/genjyo_list_H.csv');        
+    if(this.props.bldg=='bld-1')tktData = require('dsv-loader!../data/KAWASAKI/genjyo_list_K.csv');
+    if(this.props.bldg=='bld-2')tktData = require('dsv-loader!../data/AMA/genjyo_list_A.csv');
+    if(this.props.bldg=='bld-3')tktData = require('dsv-loader!../data/Hokkaido/genjyo_list_H.csv');        
     if(!this.state.isRendered){
           tktData.forEach(function(d){
             d.suggested = +d.suggested/1000000;//devided by million

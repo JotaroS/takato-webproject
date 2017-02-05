@@ -25,7 +25,8 @@ export default class TktIzumiRiskEstimator  extends React.Component {
   render(){
       if(this.props.disp == true){
       return( 
-        <div>
+        <div className="col-xs-12">
+        <h4>物件修繕工法の提案</h4>
            <div className="col-xs-4">
               <button type="button" className="btn btn-secondary" value="genjyo" onClick={(event)=>{this.handleClicked(event);this.props.handleSelect(event);}}>現状手法の工法リスト</button>
            </div>
@@ -33,7 +34,8 @@ export default class TktIzumiRiskEstimator  extends React.Component {
            <div className="col-xs-4">
               <button type="button" className="btn btn-success" value="suggested" onClick={(event)=>{this.handleClicked(event);this.props.handleSelect(event);}}>提案手法の工法リスト</button>
            </div>
-           <hr/><hr/><hr/>
+           <br/><br/>
+           
            <TktSuggestion suggestion={this.state.suggestion} disp = {this.state.isClicked}/>
         </div>
     );
