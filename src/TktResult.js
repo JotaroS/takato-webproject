@@ -12,11 +12,14 @@ export default class TktResult extends React.Component {
     super();
     this.state= {
       criticalYear:"default",
+      isFooterDisplay:false,
     }
     this.handleSelect = this.handleSelect.bind(this)
   }
   handleSelect(){
-
+    this.setState({
+      isFooterDisplay:true
+    });
   }
   render(){
     if(this.props.disp==true)
@@ -31,7 +34,9 @@ export default class TktResult extends React.Component {
        <hr/>
        <TktIzumiRiskEstimator bldg={this.props.bldg} disp={this.props.disp}/>
        <TktSuggestionSelector disp={this.props.disp} handleSelect={this.handleSelect} />
-       <Footer />
+       <div className="col-xs-12" style={{height:"50px"}} />
+
+       <Footer disp={this.state.isFooterDisplay}/>
     </div> 
     );
   else if(this.props.loading == true){ return(

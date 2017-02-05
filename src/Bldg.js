@@ -64,9 +64,9 @@ export default class Bldg extends React.Component {
         <div className = "col-xs-6">
           <h5>物件名:{bldg.name}</h5>
           所在地：{bldg.addr} <br/>
-          竣工：{bldg.year} <br/>
-          階数：{bldg.floor} <br/>
-          延床面積：{bldg.area} <br/>
+          竣工：{bldg.year}年 <br/>
+          階数：地上{bldg.floor}階<br/>
+          延床面積：{bldg.area}㎡ <br/>
           主体構造：{bldg.structure}  <br/>      
           仕上げ：{bldg.finish} <br/>
         </div>

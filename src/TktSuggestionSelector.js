@@ -9,10 +9,10 @@ export default class TktIzumiRiskEstimator  extends React.Component {
       isClicked:false,
       suggestion:"default",
     }
-    this.handleSelect = this.handleSelect.bind(this);
+    this.handleClicked = this.handleClicked.bind(this);
   }
 
-  handleSelect(event){
+  handleClicked(event){
     if(event.target.value=='genjyo'){
       this.setState({isClicked:true});
       this.setState({suggestion:"genjyo"});
@@ -21,18 +21,17 @@ export default class TktIzumiRiskEstimator  extends React.Component {
       this.setState({isClicked:true});
       this.setState({suggestion:"suggested"});
     }
-
   }
   render(){
       if(this.props.disp == true){
       return( 
         <div>
            <div className="col-xs-4">
-              <button type="button" className="btn btn-secondary" value="genjyo" onClick={this.handleSelect}>現状手法の工法リスト</button>
+              <button type="button" className="btn btn-secondary" value="genjyo" onClick={(event)=>{this.handleClicked(event);this.props.handleSelect(event);}}>現状手法の工法リスト</button>
            </div>
            <div className="col-xs-4"></div>
            <div className="col-xs-4">
-              <button type="button" className="btn btn-success" value="suggested" onClick={this.handleSelect}>提案手法の工法リスト</button>
+              <button type="button" className="btn btn-success" value="suggested" onClick={(event)=>{this.handleClicked(event);this.props.handleSelect(event);}}>提案手法の工法リスト</button>
            </div>
            <hr/><hr/><hr/>
            <TktSuggestion suggestion={this.state.suggestion} disp = {this.state.isClicked}/>

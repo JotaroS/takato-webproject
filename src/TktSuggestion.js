@@ -38,7 +38,7 @@ export default class TktSuggestion  extends React.Component {
               <img src="../img/genjyo_K.jpg" width="100%" />
             </div>
           </div>
-
+          
       );
     }
     if(this.props.disp == true && this.props.suggestion=='suggested'){
