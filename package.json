@@ -8,7 +8,7 @@
     "production": "webpack -p",
     "develop": "webpack -d",
     "watch": "webpack --watch",
-    "server": "webpack-dev-server",
+    "server": "webpack-dev-server --progress --inline",
     "start": "node server.js"
   },
   "keywords": [
@@ -23,6 +23,7 @@
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-c3": "^1.0.0",
+    "react-c3js": "^0.1.15",
     "react-d3": "^0.4.0",
     "react-d3-basic": "^1.6.11",
     "react-dom": "^15.4.2",

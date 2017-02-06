@@ -30,19 +30,18 @@ export default class TktResult extends React.Component {
     <div className="col-md-12" >
        <TktGraph bldg = {this.props.bldg} disp={this.props.disp}/>
        <br/>
-       <TktTestGraph bldg = {this.props.bldg} disp={this.props.disp}/>
-       <br/>
        <TktWarning bldg={this.props.bldg} />
        <hr/>
        <p>現状手法のままでは，積立金が0円を下回ってしまい...................てしまいます．</p>
+               <TktBldgManagerPlan disp={this.props.disp} bldg={this.props.bldg} />
+      <hr/>
        <TktNeutralGraph bldg = {this.props.bldg} disp={this.props.disp}/>
        <hr/>
        <TktIzumiRiskEstimator bldg={this.props.bldg} disp={this.props.disp}/>
       <hr/>
        <TktRepairPlan disp={this.props.disp} bldg={this.props.bldg} />
       <hr/>
-        <TktBldgManagerPlan disp={this.props.disp} bldg={this.props.bldg} />
-      <hr/>
+
        <TktSuggestionSelector disp={this.props.disp} handleSelect={this.handleSelect} />
        <hr/>
        <div className="col-md-12" style={{height:"20px"}} />
