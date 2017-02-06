@@ -8,6 +8,7 @@ import TktRepairPlan from "./TktRepairPlan";
 import TktIzumiRiskEstimator from "./TktIzumiRiskEstimator";
 import TktSuggestionSelector from "./TktSuggestionSelector";
 import TktBldgManagerPlan from "./TktBldgManagerPlan";
+import TktTestGraph from "./TktTestGraph";
 import Footer from "./Footer";
 export default class TktResult extends React.Component {
   constructor() {
@@ -28,6 +29,8 @@ export default class TktResult extends React.Component {
     return(
     <div className="col-md-12" >
        <TktGraph bldg = {this.props.bldg} disp={this.props.disp}/>
+       <br/>
+       <TktTestGraph bldg = {this.props.bldg} disp={this.props.disp}/>
        <br/>
        <TktWarning bldg={this.props.bldg} />
        <hr/>

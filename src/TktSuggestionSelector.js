@@ -26,7 +26,7 @@ export default class TktIzumiRiskEstimator  extends React.Component {
       if(this.props.disp == true){
       return( 
         <div className="col-xs-12">
-        <h4>物件修繕工法の提案</h4>
+        <h4>物件修繕工法</h4>
            <div className="col-xs-4">
               <button type="button" className="btn btn-secondary" value="genjyo" onClick={(event)=>{this.handleClicked(event);this.props.handleSelect(event);}}>現状手法の工法リスト</button>
            </div>

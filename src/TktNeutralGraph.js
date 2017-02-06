@@ -18,7 +18,7 @@ export default class TktNeutralGraph extends React.Component {
       return( 
         <div>
       　　<hr/>
-          <center><h6>中性化進行を例とした劣化程度のグラフ</h6></center>
+          <center><h6>中性化予測による劣化程度の比較</h6></center>
           <img src={this.state.graph} width="100%"/>
       </div>
     );

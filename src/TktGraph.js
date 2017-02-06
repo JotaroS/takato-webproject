@@ -31,11 +31,11 @@ export default class TktGraph extends React.Component {
       return( 
         <div>
       　　<hr/>
-          <center><h6>積立金の推移グラフ (百万円 / 年)</h6></center>
+          <center><h6>修繕積立金の推移グラフ (百万円 / 年)</h6></center>
           <ResponsiveContainer width="100%" height={320}>
               <LineChart data={tktData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
-                <Line  dataKey="genjyo" name = "最適化なし（現状手法）"stroke="#82ca9d" dot={false} strokeWidth={2}/>
-                <Line  dataKey="suggested" name = "最適化あり（提案手法）" stroke="#00ca9d" dot={false} strokeWidth={2}/>
+                <Line  dataKey="genjyo" name = "最適化なし（現状継続）"stroke="#41ACA9" dot={false} strokeWidth={2}/>
+                <Line  dataKey="suggested" name = "最適化あり（CoRPOプラン）" stroke="#E69973" dot={false} strokeWidth={2}/>
                 <CartesianGrid stroke = "#ccc" />
                 <Legend/>
                 <XAxis　datakey = "year" tickCount={10} unit="Year"/>

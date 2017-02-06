@@ -42,7 +42,7 @@ export default class TktRepairPlan extends React.Component {
       var items= this.processJson(i);
       return(
         <div className = 'col-xs-12'>
-            <h4>年次別修繕計画の提案</h4>
+            <h4>年次別修繕計画</h4>
             <button type="button" className="btn btn-success" data-toggle="collapse" data-target="#demo">
               ボタンで開閉
             </button>

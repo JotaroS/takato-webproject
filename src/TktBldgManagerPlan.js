@@ -70,7 +70,7 @@ export default class TktBldgManagerPlan extends React.Component {
     this.setState({manager_on_week:week});
     return ;
   }
-  render(){ 
+  render(){
     if(this.props.disp==true){
       var i;
       // if(this.props.bldg=='bld-1')i = require('dsv-loader!../data/KAWASAKI/df2_K.csv');
@@ -78,7 +78,7 @@ export default class TktBldgManagerPlan extends React.Component {
       // if(this.props.bldg=='bld-3')i = require('dsv-loader!../data/Hokkaido/df2_H.csv');
       return(
         <div className = 'col-xs-12'>
-            <h4>物件管理計画の提案</h4>
+            <h4>物件管理計画</h4>
             <button type="button" className="btn btn-success" data-toggle="collapse" data-target="#bldgmngr" onClick={this.processJson} >
               ボタンを押して表示
             </button>

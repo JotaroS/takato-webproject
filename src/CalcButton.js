@@ -20,7 +20,7 @@ export default class Layout extends React.Component {
       return (
         <div className  = "center-block">
           <center>
-            <button type="button" className="btn btn-success" onClick={this.props.handleClick}>積立金と維持管理費のシミュレーション開始</button>
+            <button type="button" className="btn btn-success" onClick={this.props.handleClick}>維持管理計画のシミュレーション開始</button>
           </center>
         </div>
       );

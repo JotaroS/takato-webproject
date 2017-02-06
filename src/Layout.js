@@ -61,12 +61,12 @@ export default class Layout extends React.Component {
     return (
       <div>
         <div className="form-group">
-          <label >物件の諸元:</label>
+          <label >事例の諸元:</label>
           <select className="form-control" value={this.state.building}  onChange={this.handleChange}>
-            <option value = "default">物件を選択してください</option>
-            <option value="bld-1">物件1:ルヴェソンヴェール川崎</option>
-            <option value="bld-2">物件2:ボナール尼崎</option>
-            <option value="bld-3">物件3:ラフィネ札幌</option>
+            <option value = "default">事例を選択してください</option>
+            <option value="bld-1">事例1:ルヴェソンヴェール川崎</option>
+            <option value="bld-2">事例2:ボナール尼崎</option>
+            <option value="bld-3">事例3:ラフィネ札幌</option>
           </select>
         </div>
         <BldgPic Pic = {this.state.Pic} bldg={this.state.building}/>
