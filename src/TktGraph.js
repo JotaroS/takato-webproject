@@ -30,6 +30,21 @@ export default class TktGraph extends React.Component {
     var crit;
     if(this.props.bldg=='bld-1')crit = 11;
     if(this.props.bldg=='bld-3')crit = 13;
+
+
+    //ラベルを左寄せにしたかったのでコンポーネント作っておいた
+    const CustomizedAxisTick = React.createClass({
+      render () {
+        const {x, y, stroke, payload} = this.props;
+        
+        return (
+          <g transform={`translate(${x},${y})`}>
+            <text x={10} y={-3} dy={16} textAnchor="start" fill="#666"　stroke ="red" strokeWidth = {0.5}>現状:{crit}年後に修繕積立金不足</text>
+          </g>
+        );
+      }
+    });
+
     if(this.props.disp == true || this.props.bldg!='bld-2'){
       var tktData = this.changeData();
       return( 
@@ -43,7 +58,7 @@ export default class TktGraph extends React.Component {
                 <CartesianGrid stroke = "#ccc" />
                 <Legend/>
                 <XAxis　datakey = "year" unit="Year" ticks={xticks}/>
-                <ReferenceLine x={crit} stroke="red" label="現状継続:不足" />
+                <ReferenceLine x={crit} stroke="red"  label={<CustomizedAxisTick />} />
                 <YAxis tickCount={10} />
               </LineChart>
           </ResponsiveContainer>
