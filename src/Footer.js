@@ -66,6 +66,9 @@ export default class Footer  extends React.Component {
          <img src="../img/banner-2.png" width="100%" />
         </div>
         <div className = 'col-xs-12' ><hr/></div>
+                 <div className = "col-md-12">
+         Lorem ipsum Reprehenderit nisi Duis dolore sint velit sed amet elit in aliquip consectetur esse ullamco amet nisi ex dolor do laboris cillum ullamco deserunt adipisicing exercitation veniam non minim tempor nulla cillum nulla in veniam adipisicing ea consectetur voluptate in magna sit anim sint culpa ex deserunt commodo consequat enim dolore sit ullamco laborum ut et non officia consectetur eiusmod dolore in dolore labore occaecat pariatur in veniam dolore qui consectetur tempor qui esse in mollit est aliqua ad laboris anim eiusmod dolor nisi elit dolore Ut dolor tempor esse nisi labore elit nisi consequat Ut culpa ea eu sed laborum consequat exercitation laboris proident non pariatur Excepteur ea commodo in irure nulla consequat Duis officia consequat amet commodo culpa id laboris consequat reprehenderit mollit minim anim eiusmod nisi laboris exercitation proident Excepteur aute reprehenderit sunt velit ut nulla nisi velit sint ullamco adipisicing occaecat.
+         </div>
       </div>
       );
   }
