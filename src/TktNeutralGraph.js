@@ -28,10 +28,16 @@ export default class TktNeutralGraph extends React.Component {
   
   render(){
     const xticks = [0,50,100,150,200];
-    var crit;
+    var crit="";
 
     if(this.props.bldg=='bld-1')crit = 11;
     if(this.props.bldg=='bld-3')crit = 13;
+    var msg_1 = "現状継続("+crit.toString()+"年以降外壁修繕ができない)";
+    var msg_2 = "CoRPOプラン(順調に"+(crit+1).toString()+"年おきに修繕可能)";
+    if(this.props.bldg == 'bld-2'){
+       msg_1 = "現状継続";
+       msg_2 = "CoRPOプラン";
+    }
     const CustomizedAxisTick = React.createClass({
       render () {
         const {x, y, stroke, payload} = this.props;
@@ -51,8 +57,8 @@ export default class TktNeutralGraph extends React.Component {
           <center><h6>中性化予測による劣化程度の比較 (中性化深さ[mm] / 年)</h6></center>
           <ResponsiveContainer width="100%" height={320}>
               <LineChart data={tktData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
-                <Line  dataKey="Genjyo" name = "最適化なし（現状継続）"stroke="#41ACA9" dot={false} strokeWidth={2}/>
-                <Line  dataKey="Suggested" name = "最適化あり（CoRPOプラン）" stroke="#E69973" dot={false} strokeWidth={2}/>
+                <Line  dataKey="Genjyo" name = {msg_1} stroke="#41ACA9" dot={false} strokeWidth={2}/>
+                <Line  dataKey="Suggested" name = {msg_2} stroke="#E69973" dot={false} strokeWidth={2}/>
                 <CartesianGrid stroke = "#ccc" />
                 <Legend/>
                 <ReferenceLine x={crit} stroke="red" viewBox={{x: 100, y: 10, width: 200, height: 30}} label={<CustomizedAxisTick />} />

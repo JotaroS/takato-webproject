@@ -33,7 +33,8 @@ export default class TktBldgManagerPlan extends React.Component {
     if(this.props.bldg=='bld-1'){
       items = require('dsv-loader!../data/KAWASAKI/df1_K.csv');
       this.setState({manager_on_holidays_crit:1});
-      this.setState({manager_on_week_crit:1});      
+      this.setState({manager_on_week_crit:1});
+      week.push({"不足人数[人]":"不足年次なし"});      
     }
     if(this.props.bldg=='bld-2'){
       items = require('dsv-loader!../data/AMA/df1_A.csv');
@@ -78,27 +79,29 @@ export default class TktBldgManagerPlan extends React.Component {
       // if(this.props.bldg=='bld-3')i = require('dsv-loader!../data/Hokkaido/df2_H.csv');
       return(
         <div className = 'col-xs-12'>
-            <h4>物件管理計画</h4>
+            <h4>管理費削減計画</h4>
             <button type="button" className="btn btn-success" data-toggle="collapse" data-target="#bldgmngr" onClick={this.processJson} >
               ボタンを押して表示
             </button>
             <hr />
+            <h5> 理想的な管理水準 </h5>
             <div id="bldgmngr" className="collapse">
               <div className='col-xs-4' > 
                <h6>休日出勤する管理人が不足する年次</h6>
-               <p><strong>常駐人数：{this.state.manager_on_holidays_crit}</strong></p>
+               <spab className='label label-success'><strong>理想人数：{this.state.manager_on_holidays_crit}</strong></spab>
               <JsonTable className="table table-striped" rows={this.state.manager_on_holidays}/>
               </div>
 
               <div className='col-xs-4' >  
                 <h6>週日出勤する管理人が不足する年次</h6>
-               <p><strong>常駐人数：{this.state.manager_on_week_crit}</strong></p>
+               <spab className='label label-success'><strong>理想人数：{this.state.manager_on_week_crit}</strong></spab>
               <JsonTable settings={this.getSettings} className="table table-striped" rows={this.state.manager_on_week}/>
               </div>                           
 
               <div className='col-xs-4' >
               <h6>必要な共用部の清掃面積比</h6>
-              <p> </p>
+              <br />
+              <spab className='label label-success'><strong>理想的な清掃面積:90%</strong></spab>
               <JsonTable className="table table-striped" rows={this.state.cleaness}/>
               </div>
             </div>  

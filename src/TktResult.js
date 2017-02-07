@@ -5,6 +5,7 @@ import TktNeutralGraph from './TktNeutralGraph';
 import Loading from "react-loading-animation";
 import TktWarning from "./TktWarning";
 import TktRepairPlan from "./TktRepairPlan";
+import TktReliabilityEstimator from "./TktReliabilityEstimator";
 import TktIzumiRiskEstimator from "./TktIzumiRiskEstimator";
 import TktSuggestionSelector from "./TktSuggestionSelector";
 import TktBldgManagerPlan from "./TktBldgManagerPlan";
@@ -61,9 +62,10 @@ export default class TktResult extends React.Component {
          <hr/>
            <TktIzumiRiskEstimator bldg={this.props.bldg} disp={this.props.disp}/>
         <hr/>
+        <TktReliabilityEstimator disp={this.props.disp} />
+        <hr />
          <TktRepairPlan disp={this.props.disp} bldg={this.props.bldg} />
         <hr/>
-
          <TktSuggestionSelector disp={this.props.disp} handleSelect={this.handleSelect} />
          <hr/>
          <div className="col-md-12" style={{height:"20px"}} />

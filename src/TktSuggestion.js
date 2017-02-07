@@ -20,7 +20,7 @@ export default class TktSuggestion  extends React.Component {
         <hr/>
           <div className = "card">
             <div className="col-xs-6">
-              <h5>現状手法に対する工法の提案</h5>
+              <h5>現状の維持管理計画下で適用可能な修繕工法</h5>
               <hr/>
               <h6>外壁の状態： <span className="label label-danger">不良:補修が必要</span></h6>
               <h6>補修工法</h6>
@@ -49,10 +49,10 @@ export default class TktSuggestion  extends React.Component {
           <hr/>
           <div className = "card">
             <div className="col-xs-6">
-              <h5>提案手法に対する工法の提案</h5>
+              <h5>CoRPOによる最適管理下で適用可能な修繕工法</h5>
               <hr/>
               <h6>外壁の状態： <span className="label label-success">良好:補修は不要</span></h6>
-              <p>設備充実のための投資プランを提案します</p>
+              <p>ランニングコスト削減のための修繕プランを提案をします</p>
               <ul>
                 <li>アルミサッシを樹脂サッシに変更</li>
                 <li>ガラスをペアガラス，Low-Eガラスに変更</li>
