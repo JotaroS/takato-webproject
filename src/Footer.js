@@ -58,6 +58,7 @@ export default class Footer  extends React.Component {
         <center><p>　しかし、耐久性の限界である200年に挑んだ記憶は外観の表情にも現れ、　</p></center>        
         <center><p>　その事実と記憶は後世への財産となる。　</p></center>                
         <center><p>　Project:CoRPOはそのプロトタイプとなるプロジェクトである。　</p></center>                        
+        <hr />
         </div>
       
         <div className = 'col-xs-12' >
