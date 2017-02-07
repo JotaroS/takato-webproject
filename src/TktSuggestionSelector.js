@@ -36,7 +36,7 @@ export default class TktIzumiRiskEstimator  extends React.Component {
            </div>
            <br/><br/>
            
-           <TktSuggestion suggestion={this.state.suggestion} disp = {this.state.isClicked}/>
+           <TktSuggestion bldg = {this.props.bldg}suggestion={this.state.suggestion} disp = {this.state.isClicked}/>
         </div>
     );
   }

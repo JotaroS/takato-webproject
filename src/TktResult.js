@@ -10,6 +10,7 @@ import TktIzumiRiskEstimator from "./TktIzumiRiskEstimator";
 import TktSuggestionSelector from "./TktSuggestionSelector";
 import TktBldgManagerPlan from "./TktBldgManagerPlan";
 import TktTestGraph from "./TktTestGraph";
+import TktMsg from "./TktMsg";
 import Footer from "./Footer";
 export default class TktResult extends React.Component {
   constructor() {
@@ -37,7 +38,7 @@ export default class TktResult extends React.Component {
             <div><p>現状の維持管理計画のままでは、{crit_year}年後に修繕積立金が不足し、その後の修繕を行うことができなくなる。
           そうなれば、構造物の本来有する耐久性のポテンシャルが大幅に奪われてしまう。
           長く「住まう」ためには、居住者らが適宜自主管理等を行うことで削減可能な管理費用を修繕費用に充てる必要がある。
-          次の管理費節約計画に従って、時に、清掃や警備等を自主的に行うことで持続可能な長期維持管理計画が実現する。</p><hr /></div>
+          </p><hr /></div>
           );
         }
       });
@@ -66,9 +67,11 @@ export default class TktResult extends React.Component {
         <hr />
          <TktRepairPlan disp={this.props.disp} bldg={this.props.bldg} />
         <hr/>
-         <TktSuggestionSelector disp={this.props.disp} handleSelect={this.handleSelect} />
-         <hr/>
+         <TktSuggestionSelector bldg={this.props.bldg} disp={this.props.disp} handleSelect={this.handleSelect} />
+
          <div className="col-md-12" style={{height:"20px"}} />
+         
+         <TktMsg disp={this.state.isFooterDisplay}/>
          <Footer disp={this.state.isFooterDisplay}/>
       </div> 
       );

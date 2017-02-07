@@ -67,7 +67,12 @@ export default class Footer  extends React.Component {
         </div>
         <div className = 'col-xs-12' ><hr/></div>
                  <div className = "col-md-12">
-         Lorem ipsum Reprehenderit nisi Duis dolore sint velit sed amet elit in aliquip consectetur esse ullamco amet nisi ex dolor do laboris cillum ullamco deserunt adipisicing exercitation veniam non minim tempor nulla cillum nulla in veniam adipisicing ea consectetur voluptate in magna sit anim sint culpa ex deserunt commodo consequat enim dolore sit ullamco laborum ut et non officia consectetur eiusmod dolore in dolore labore occaecat pariatur in veniam dolore qui consectetur tempor qui esse in mollit est aliqua ad laboris anim eiusmod dolor nisi elit dolore Ut dolor tempor esse nisi labore elit nisi consequat Ut culpa ea eu sed laborum consequat exercitation laboris proident non pariatur Excepteur ea commodo in irure nulla consequat Duis officia consequat amet commodo culpa id laboris consequat reprehenderit mollit minim anim eiusmod nisi laboris exercitation proident Excepteur aute reprehenderit sunt velit ut nulla nisi velit sint ullamco adipisicing occaecat.
+                <p>文献リスト</p>
+                <p><small>[1]日本ビル新聞社:ビルメンテナンスの積算＆見積,2016</small></p>
+                <p><small>[2]春畑他:既存鉄筋コンクリート造建築物のコンクリート材料調査における圧縮強度と中性化深さの統計</small></p>
+                <p><small>[3]和泉他:鉄筋コンクリート造建築物における鉄筋のかぶり厚さの信頼性設計手法の提案</small></p>
+                <p><small>[4]セメダイン:http://faq.cemedine.co.jp/faq/show/526</small></p>
+                <p><small>[5]一般財団法人 建築保全センター:公共建築改修工事標準仕様書(建築工事編),2016</small></p>
          </div>
       </div>
       );

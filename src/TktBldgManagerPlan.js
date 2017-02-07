@@ -10,7 +10,7 @@ export default class TktBldgManagerPlan extends React.Component {
       cleaness:[],
       manager_on_week:[],
       manager_on_holidays_crit:1,
-      manager_on_week_crit:1,      
+      manager_on_week_crit:1, 
     }
     this.getSettings = this.getSettings.bind(this);
     this.processJson = this.processJson.bind(this);
@@ -79,7 +79,9 @@ export default class TktBldgManagerPlan extends React.Component {
       // if(this.props.bldg=='bld-3')i = require('dsv-loader!../data/Hokkaido/df2_H.csv');
       return(
         <div className = 'col-xs-12'>
+            <p><strong>次の管理費節約計画によって、清掃や警備等を自主的に行うことで持続可能な長期維持管理計画が実現する。</strong></p>
             <h4>管理費削減計画</h4>
+            <p><small>※管理比較項目の単価は文献[1]により計算している。</small></p>
             <button type="button" className="btn btn-success" data-toggle="collapse" data-target="#bldgmngr" onClick={this.processJson} >
               ボタンを押して表示
             </button>

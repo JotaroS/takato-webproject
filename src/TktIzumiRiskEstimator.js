@@ -37,6 +37,7 @@ export default class TktIzumiRiskEstimator  extends React.Component {
                 </tr>
               </tbody>
             </table>
+            <p><small>※補修の可否による仕上材の劣化を考慮した中性化進行予測。竣工年と圧縮強度の関係を明らかにした春畑ら[2]の結果を用いて、JASS5の圧縮強度と中性化速度係数の関係から中性化速度係数を決定した。</small></p>
         </div>
     );
   }
@@ -71,6 +72,7 @@ export default class TktIzumiRiskEstimator  extends React.Component {
               </tr>
             </tbody>
           </table>
+          <p><small>※補修の可否による仕上材の劣化を考慮した中性化進行予測。竣工年と圧縮強度の関係を明らかにした春畑ら[2]の結果を用いて、JASS5の圧縮強度と中性化速度係数の関係から中性化速度係数を決定した。</small></p>
         </div>
     );
   }
@@ -106,6 +108,7 @@ export default class TktIzumiRiskEstimator  extends React.Component {
               </tr>
             </tbody>
           </table>
+          <p><small>※補修の可否による仕上材の劣化を考慮した中性化進行予測。竣工年と圧縮強度の関係を明らかにした春畑ら[2]の結果を用いて、JASS5の圧縮強度と中性化速度係数の関係から中性化速度係数を決定した。</small></p>
         </div>
     );
   }
