@@ -3,6 +3,13 @@
 
 Programmer : JotaroS
 
+## 最新状態への更新方法
+(初回だけ `git remote add upstream https://github.com/JotaroS/takato-webproject.git`)
+
+`git pull upstream master`
+`git push origin master`
+
+
 ## インストール方法 (ひとまず実行してみる)
 
 ### nodejsのインストール
