@@ -12,17 +12,22 @@ export default class Footer  extends React.Component {
   render(){
     if(this.props.disp==true){
     return(
-      <div className='col-xs-12' style={{background:"#FAF7ED"}}>
+      <div className='col-xs-12' style={{background:"#FCF8EE"}}>
         <br />
         <center><h4> CORPOのコンセプト</h4></center> 
         <hr />
         
         <div className='col-xs-12' name="msg-block-1">
           <div className='col-xs-6'>
-            Lorem ipsum Mollit ut do et cupidatat Excepteur non in ex sed esse Duis do id amet voluptate ea Ut incididunt qui nulla sit in dolore labore.
+            RC構造物の約半数は50年で寿命を迎えることがわかっている。
+            適切なメンテナンスが行われず、修復不可能な段階まで劣化が進んだ集合住宅は、
+            完全建て替えが必要となる。
+            建て替えにはデベロッパーの発注ベースで戸当たり1700万円程度かかるが、
+            これは多くの集合住宅にとって現実的な選択肢とならない。
+            既存の集合住宅に長く、大切に「住まう」ことが必要である。
           </div>
           <div className='col-xs-6'>
-            Lorem ipsum Elit ut labore ea esse est voluptate cillum magna exercitation in ullamco Excepteur et voluptate deserunt reprehenderit esse adipisicing reprehenderit veniam qui laboris ut.
+            <img src="../img/graph.png" width="100%"/>
           </div>
         </div>
         <div className = 'col-xs-12' style={{height:"30px"}}><hr/></div>
@@ -30,35 +35,21 @@ export default class Footer  extends React.Component {
 
         <div name="msg-block-2" className='col-xs-12'>
           <div className='col-xs-6'>
-            Lorem ipsum Mollit ut do et cupidatat Excepteur non in ex sed esse Duis do id amet voluptate ea Ut incididunt qui nulla sit in dolore labore.
+            <br /><br />
+            <img src="../img/graph2.png" width="100%"/>
           </div>
           <div className='col-xs-6'>
-            Lorem ipsum Elit ut labore ea esse est voluptate cillum magna exercitation in ullamco Excepteur et voluptate deserunt reprehenderit esse adipisicing reprehenderit veniam qui laboris ut.
+          JASS5の耐久設計基準では超長期級として
+          200年耐久のRC構造物の設計基準が示されている。
+          しかし、実構造物でそのような超長期耐久に挑むことは容易なことではない。
+          実際に、従来の維持管理体系では対応が明らかに不十分である。
+          維持管理に関するソフト面へ介入することで、200年耐久を実現させる。
           </div>
         </div>
-        <div className = 'col-xs-12' style={{height:"30px"}}><hr/></div>
-
-
-        <div name="msg-block-3" className='col-xs-12'>
-          <div className='col-xs-6'>
-            Lorem ipsum Mollit ut do et cupidatat Excepteur non in ex sed esse Duis do id amet voluptate ea Ut incididunt qui nulla sit in dolore labore.
-          </div>
-          <div className='col-xs-6'>
-            Lorem ipsum Elit ut labore ea esse est voluptate cillum magna exercitation in ullamco Excepteur et voluptate deserunt reprehenderit esse adipisicing reprehenderit veniam qui laboris ut.
-          </div>
-        </div>
-        
-        <div className = 'col-xs-12' style={{background:"url('../img/zoi.png')",backgroundSize:"contain"}}><hr/>
-          <center><p>200年住まわれた住宅は今から200年後どのような価値を持つのか。</p></center>
-          <center><p>本当に200年使われた建築物は文化財となるほどの権威性を帯びる。</p></center>        
-          <center><p>　こと集合住宅に関しては住まわれ続けたのであれば、尚更強い意味を持つ。　</p></center>
-          <center><p>　そして中高層集合住宅こそが、200年耐久の可能性を秘める。　</p></center>
-          <center><p>　200年耐久が達成されれば、その他のビルディングタイプも200年耐久へ動き出す。　</p></center>        
-          <center><p>　200年後の都市がどうなっているかは、誰にもわからない。　</p></center>        
-          <center><p>　しかし、耐久性の限界である200年に挑んだ記憶は外観の表情にも現れ、　</p></center>        
-          <center><p>　その事実と記憶は後世への財産となる。　</p></center>                
-          <center><p>　Project:CoRPOはそのプロトタイプとなるプロジェクトである。　</p></center>                        
-          <hr />
+        <div className = 'col-xs-12'>
+          <br />
+          <img src="../img/jojiro.png" width="100%"/> 
+          <br />
         </div>
       
         <div className = 'col-xs-12' >

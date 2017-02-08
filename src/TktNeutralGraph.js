@@ -14,7 +14,7 @@ export default class TktNeutralGraph extends React.Component {
   changeData(){
     var tktData;
     if(this.props.bldg=='bld-1')tktData = require('dsv-loader!../data/KAWASAKI/Carbonation_K_new.csv');
-    if(this.props.bldg=='bld-2')tktData = require('dsv-loader!../data/AMA/Carbonation_A_new.csv');
+    if(this.props.bldg=='bld-2')tktData = require('dsv-loader!../data/AMA/Carbonation_A_newnew.csv');
     if(this.props.bldg=='bld-3')tktData = require('dsv-loader!../data/Hokkaido/Carbonation_H_new.csv');        
     if(!this.state.isRendered){
           tktData.forEach(function(d){

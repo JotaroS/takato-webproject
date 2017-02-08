@@ -23,17 +23,17 @@ export default class TktIzumiRiskEstimator  extends React.Component {
               <tbody>
                 <tr className="active">
                   <th scope="row">現状手法</th>
-                  <td >5.43</td>
-                  <td>9.41</td>
-                  <td>13.6</td>
-                  <td>25.8</td>                
+                  <td>3.87</td>
+                  <td>5.12</td>
+                  <td>6.28</td>
+                  <td>9.41</td>                
                 </tr>
                 <tr className = "success">
                   <th scope="row">提案手法</th>
-                  <td>4.09</td>
-                  <td>5.46</td>
-                  <td>6.71</td>
-                  <td>10.1</td>                
+                  <td>3.87</td>
+                  <td>5.12</td>
+                  <td>6.28</td>
+                  <td>9.41</td>         
                 </tr>
               </tbody>
             </table>
