@@ -1,6 +1,6 @@
 {
   "name": "takato-webproject",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "takato-web-sotsusei",
   "main": "webpack.config.js",
   "scripts": {

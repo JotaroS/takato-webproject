@@ -17,6 +17,13 @@ Programmer : JotaroS
 本アプリに必要なnodejsの周辺ライブラリ・モジュールは、nodejsが提供するパッケージマネージャ `npm` によって管理されている。利用するパッケージの一覧は　`package.json`にすでに記述されている。
 ターミナルに`npm install` と打つことで、 `node_modules`フォルダが生成されて周辺パッケージがその中に全部入る。
 
+webpackとwebpack-dev-serverはグローバル環境にもインストールしておく必要がある。
+
+`npm install -g webpack`
+`npm install -g webpack-dev-server`
+
+
+
 ### 開発用の実行
 `npm run server`を実行(package.jsonにコマンドの内容がある)。
 
