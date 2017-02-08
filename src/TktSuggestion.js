@@ -37,7 +37,7 @@ export default class TktSuggestion  extends React.Component {
             </div>
             </div>
             <div className="col-xs-6">
-              <img src="../data/KAWASAKI/genjo.jpg" width="100%" />
+              <img src="../data/KAWASAKI/suggested.jpg" width="100%" />
             </div>
           </div>
           
@@ -60,7 +60,7 @@ export default class TktSuggestion  extends React.Component {
             </div>
             </div>
             <div className="col-xs-6">
-              <img src="../data/KAWASAKI/suggested.jpg" width="100%" />
+              <img src="../data/KAWASAKI/genjo.jpg" width="100%" />
             </div>
             <p><small>※専門メーカー[4]によれば、シーリング材交換目安周期は5~10年と言われており、大規模修繕工事周期の12年よりスパンが短い。</small></p>
 

@@ -54,6 +54,8 @@ export default class TktNeutralGraph extends React.Component {
       return( 
         <div>
       　　<hr/>
+          <h4>中性化による劣化への耐久性検討</h4>
+          <br />
           <center><h6>中性化予測による劣化程度の比較 (中性化深さ[mm] / 年)</h6></center>
           <ResponsiveContainer width="100%" height={320}>
               <LineChart data={tktData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>

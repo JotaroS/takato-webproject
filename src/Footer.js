@@ -48,17 +48,17 @@ export default class Footer  extends React.Component {
           </div>
         </div>
         
-        <div className = 'col-xs-12' ><hr/>
-        <center><p>200年住まわれた住宅は今から200年後どのような価値を持つのか。</p></center>
-        <center><p>本当に200年使われた建築物は文化財となるほどの権威性を帯びる。</p></center>        
-        <center><p>　こと集合住宅に関しては住まわれ続けたのであれば、尚更強い意味を持つ。　</p></center>
-        <center><p>　そして中高層集合住宅こそが、200年耐久の可能性を秘める。　</p></center>
-        <center><p>　200年耐久が達成されれば、その他のビルディングタイプも200年耐久へ動き出す。　</p></center>        
-        <center><p>　200年後の都市がどうなっているかは、誰にもわからない。　</p></center>        
-        <center><p>　しかし、耐久性の限界である200年に挑んだ記憶は外観の表情にも現れ、　</p></center>        
-        <center><p>　その事実と記憶は後世への財産となる。　</p></center>                
-        <center><p>　Project:CoRPOはそのプロトタイプとなるプロジェクトである。　</p></center>                        
-        <hr />
+        <div className = 'col-xs-12' style={{background:"url('../img/zoi.png')",backgroundSize:"contain"}}><hr/>
+          <center><p>200年住まわれた住宅は今から200年後どのような価値を持つのか。</p></center>
+          <center><p>本当に200年使われた建築物は文化財となるほどの権威性を帯びる。</p></center>        
+          <center><p>　こと集合住宅に関しては住まわれ続けたのであれば、尚更強い意味を持つ。　</p></center>
+          <center><p>　そして中高層集合住宅こそが、200年耐久の可能性を秘める。　</p></center>
+          <center><p>　200年耐久が達成されれば、その他のビルディングタイプも200年耐久へ動き出す。　</p></center>        
+          <center><p>　200年後の都市がどうなっているかは、誰にもわからない。　</p></center>        
+          <center><p>　しかし、耐久性の限界である200年に挑んだ記憶は外観の表情にも現れ、　</p></center>        
+          <center><p>　その事実と記憶は後世への財産となる。　</p></center>                
+          <center><p>　Project:CoRPOはそのプロトタイプとなるプロジェクトである。　</p></center>                        
+          <hr />
         </div>
       
         <div className = 'col-xs-12' >
